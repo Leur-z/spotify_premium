@@ -1,0 +1,290 @@
+:root {
+    --green: #24c24b;
+    --black: #191414;
+    --gold: #ffc862;
+}
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--black);
+    color: white;
+}
+h2 {
+    font-size: 36px;
+}
+li a:hover {
+    color: var(--green);
+}
+.navContainer {
+    background-color: var(--green);
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.5);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 100px;
+    color: var(--black);
+}
+.logo span {
+    font-size: 24px;
+}
+nav {
+    margin-right: 100px;
+}
+.navItems {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    color: var(--black);
+}
+.navItems li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+.navItems li a {
+    display: block;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navItems li a:hover {
+    color: #fefefe;
+}
+.heroSection {
+    background-image: url("https://cdn.pixabay.com/photo/2021/10/24/21/23/spotify-6739341_960_720.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.heroText {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 300px 0;
+    text-align: center;
+}
+.heroText h1 {
+    font-size: 42px;
+}
+#benefits {
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    border-bottom: 1px solid rgba(29, 185, 84, 0.3);
+}
+#benefits h2 {
+    text-align: center;
+    color: var(--green);
+}
+.b-container {
+    margin-left: 40px;
+}
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+.benefit span {
+    font-size: 18px;
+}
+.b-icon {
+    color: var(--green);
+}
+.how {
+    text-align: center;
+    margin: 100px 0;
+}
+.how h3 {
+    font-size: 18px;
+    color: white;
+}
+.payment {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px 50px;
+    border-bottom: 1px solid rgba(29, 185, 84, 0.3);
+}
+.payment h2 {
+    color: var(--green);
+}
+.payment p {
+    margin: 0 auto;
+    max-width: 450px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.paymentItems i {
+    margin-left: 10px;
+}
+.paymentItems i:first-child {
+    margin-left: 0;
+}
+#premium {
+    padding: 25px 0 50px 0;
+    margin: 0 auto;
+    background-color: var(--green);
+    width: 100%;
+}
+#premium h2 {
+    text-align: center;
+}
+.pContainer {
+    padding: 10px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+}
+.card {
+    max-width: 350px;
+    width: 100%;
+    background-color: #242424;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content 50px;
+}
+.card:last-child {
+    grid-area: 2/2/3/3;
+}
+
+.cardLogo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+}
+.cardHeading {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.cardHeading h3 {
+    width: 100%;
+    font-size: 32px;
+    margin: 10px 0;
+    color: var(--gold);
+}
+.price {
+    margin-top: 4px;
+    width: 100%;
+    font-weight: 600;
+}
+.cardLogo .fa-spotify {
+    font-size: 24px;
+}
+.cardList {
+    padding: 0 20px;
+    max-width: 450px;
+}
+.cardList li {
+    margin-bottom: 10px;
+}
+.innerBtn {
+    width: 100%;
+    border-radius: 2em;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--gold);
+    color: var(--black);
+    font-weight: 700;
+    font-size: 14px;
+}
+.innerBtn:hover {
+    background-color: #fccf7d;
+    transform: scale(1.05);
+}
+.cardFooter {
+    font-size: 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    align-self: center;
+    margin: 0;
+}
+.cardFooter a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.cardFooter a:hover {
+    font-weight: 600;
+}
+footer {
+    padding: 50px 100px;
+    background-color: #333;
+}
+.footerContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footerLogo {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.footerLogo i {
+    font-size: 36px;
+}
+.footerLogo span {
+    font-size: 24px;
+    font-weight: 600;
+}
+.linkContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.footerHeading {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    padding-bottom: 6px;
+    font-weight: normal;
+}
+.links {
+    margin-bottom: 50px;
+    width: 200px;
+}
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+.links ul li {
+    padding-bottom: 20px;
+}
+.links ul li a {
+    text-decoration: none;
+    color: white;
+}
+.socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.mediaIcon {
+    padding: 15px;
+    background-color: #222326;
+    border-radius: 50%;
+}
+.mediaIcon i {
+    font-size: 32px;
+    color: white;
+}
+.copyright {
+    text-align: right;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
